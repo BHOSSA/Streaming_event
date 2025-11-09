@@ -3,6 +3,8 @@
 A real-time health monitoring system designed to **track residents’ vital signs** in a care home environment.  
 This project integrates **Kafka** for streaming data, **PySpark** for real-time analytics, and a **Python-based IoT simulator** to generate live sensor data — all deployed using **Docker containers**.
 
+
+
 ---
 
 ## ⚙️ Architecture Overview
@@ -56,7 +58,7 @@ This project integrates **Kafka** for streaming data, **PySpark** for real-time 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/carehome-health-monitoring.git
+git clone https://github.com/BHOSSA/carehome-health-monitoring.git
 cd carehome-health-monitoring
 ```
 
@@ -115,7 +117,6 @@ UPDATE_INTERVAL=3
 FASTAPI_PORT=8000
 ```
 
-You can adjust `NUM_RESIDENTS` and `UPDATE_INTERVAL` in the simulator to control data flow.
 
 ---
 
@@ -123,7 +124,7 @@ You can adjust `NUM_RESIDENTS` and `UPDATE_INTERVAL` in the simulator to control
 
 - **Kafka Topics**
   ```bash
-  kafka-topics --list --bootstrap-server localhost:9092
+  kafka-topics --list --bootstrap-server --partitions 3 --replication-factor 1  localhost:9092 
   ```
 - **View Messages**
   ```bash
@@ -173,7 +174,7 @@ carehome-health-monitoring/
 ## 🤝 Contributing
 
 1. Fork the repo  
-2. Create a new branch (`feature/your-feature-name`)  
+2. Create a new branch (`feature/main`)  
 3. Commit your changes  
 4. Push and submit a Pull Request  
 
@@ -187,6 +188,6 @@ This project is licensed under the **MIT License**.
 
 ## 👤 Author
 
-**Your Name**  
-📧 your.email@example.com  
-🔗 [LinkedIn / GitHub / Portfolio link]
+  
+📧 Hossam22l@gmail.com  
+🔗 Hossam Benhada
