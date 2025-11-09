@@ -1,0 +1,22 @@
+# Environment configuration for Residential Care Home Health Monitoring System
+
+# Kafka Configuration
+KAFKA_BOOTSTRAP_SERVERS=localhost:9092
+KAFKA_TOPIC_INPUT=vital-signs-raw
+KAFKA_TOPIC_OUTPUT=vital-signs-processed
+
+# IoT Simulator Configuration
+NUM_RESIDENTS=12
+UPDATE_INTERVAL=3
+
+# FastAPI Configuration
+FASTAPI_HOST=0.0.0.0
+FASTAPI_PORT=8000
+
+# PySpark Processor Configuration
+SPARK_APP_NAME=VitalSignsProcessor
+SPARK_MASTER=local[*]
+
+# Logging and Debug
+LOG_LEVEL=INFO
+DEBUG=False
